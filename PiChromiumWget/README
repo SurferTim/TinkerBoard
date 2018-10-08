@@ -1,0 +1,56 @@
+Netflix, Amazon Prime, and Hulu on the Tinker Board
+Chromium 67.0.3396.87 (Developer Build)
+Debian Stretch 9.0 (2.0.7)
+
+This package will automatically install the needed libraries for online video playback for Chromium.
+
+----------
+Directions
+----------
+
+1) Download the archive (tinker.zip)
+2) Extract it
+3) Open a terminal and cd to the directory that contains this readme
+4) Type this command
+
+sudo chmod 775 * && sudo chmod +x install.sh
+
+5) Then type this command
+
+sudo ./install.sh
+
+6) To use, you must either use the launcher that was installed in the Internet category on your menu, or through terminal with the following command
+
+chromium --user-agent="Mozilla/5.0 (X11; CrOS armv7l 6946.63.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+----------
+Bugs
+----------
+
+1) Settings/Extensions menus do not work. You can use your original shortcut to access these and the settings will save for the custom shortcut as well.
+
+----------
+Help
+----------
+
+Here is a video uploaded by ETA PRIME to help users still needing help on installing this.
+
+https://www.youtube.com/watch?v=R7sXqqf3oGM
+
+----------
+Changelog
+----------
+
+(7/2/18) - Updated package to latest libraries and tested on latest TinkerOS. (thanks to SurferTim for info about the user agent string trick)
+(7/2/18) - Added a test package from latest C201PA chromeos. Have not tested.
+(12/14/17) - Added chromium-widevine package for use with latest ASUS operating system.
+(7/16/17) - Updated libraries to the latest available and tested on latest release of Debian from Asus with newer Chromium. Using Asus C201PA libraries (libwidevinecdm.so, libwidevinecdmadapter.so, lilpepflashplayer.so).
+(6/7/17) - Test package tested, was not better in performance, possibly worse.
+(6/6/17) - Added an updated package that needs testing. It has the latest available libraries
+(6/6/17) - Removed 7zip requirement, fixed typos, added a README
+
+----------
+Download
+----------
+
+https://tinkerboarding.co.uk/forum/thread-329.html
